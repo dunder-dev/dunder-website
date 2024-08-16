@@ -1,11 +1,7 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <!-- <NuxtWelcome /> -->
-    <Test />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
-
-<script>
-import Test from '/components/Test.vue'
-</script>
