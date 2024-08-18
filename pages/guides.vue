@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-24 sm:py-32 bg-svg text-gray-900">
+  <div class="py-24 sm:py-32 text-gray-900">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto mb-10 max-w-2xl lg:mx-0 border-b border-gray-400">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -23,7 +23,7 @@
             ><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
           </button>
         </a>
-        
+
         <p class="text-2xl ml-4">
           Intermediate JavaScript
         </p>

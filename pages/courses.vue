@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-24 sm:py-32 bg-svg">
+  <div class="bg-white sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto mb-10 max-w-2xl lg:mx-0 border-b border-gray-400">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -36,7 +36,7 @@
             <time
               datetime="2020-03-16"
               class="text-2xl text-gray-700 ml-8"
-            >Techniques For The Best Cartwheel</time>
+            >How To Train Your Cat</time>
             <div class="flex text-xs" />
           </div>
         </NuxtLink>
@@ -52,7 +52,7 @@
             <time
               datetime="2020-03-16"
               class="text-2xl text-gray-700 ml-8"
-            >Yoink The Best Frisbee</time>
+            >Best Time to Nap</time>
             <div class="flex text-xs" />
           </div>
         </NuxtLink>
