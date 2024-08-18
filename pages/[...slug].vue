@@ -26,7 +26,7 @@
       </NuxtLink>
 
       <div>
-        <ContentDoc :path="`/posts/${slug}`">
+        <ContentDoc :path="$route.params.slug ? `posts/${$route.params.slug[0]}` : '/blog'">
           <template #default="{ doc }">
             <div class="flex mt-12">
               <!-- Main Content Div taking up 75% of the space -->
