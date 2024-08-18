@@ -59,7 +59,7 @@
               </div>
 
               <!-- Table of Contents Div taking up 25% of the space -->
-              <div class="flex-1 ml-4">
+              <!-- <div class="flex-1 ml-4">
                 <div class="sticky top-0 bg-gray-900 rounded-lg shadow-md p-2 flex flex-col items-center prose prose-a:text-pink-600 hover:prose-a:text-blue-500 z-10 w-80">
                   <div class="text-xl font-semibold text-white my-4">
                     TABLE OF CONTENTS
@@ -79,7 +79,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
             </div>
           </template>
           <template #empty>
