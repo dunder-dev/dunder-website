@@ -98,7 +98,6 @@ function paginate(list) {
 }
 
 const posts = await queryContent('blog').find()
-console.log("articles", posts)
 
 </script>
 

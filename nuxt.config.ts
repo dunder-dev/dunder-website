@@ -32,6 +32,7 @@ export default defineNuxtConfig({
       },
     ],
   content: {
+    documentDriven: true,
     markdown: {
       mdc: true,
       rehypePlugins: [
