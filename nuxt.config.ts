@@ -11,11 +11,6 @@ export default defineNuxtConfig({
     "@nuxtjs/mdc",
     "@nuxtjs/tailwindcss",
   ],
-  router: {
-    options: {
-      strict: true,
-    },
-  },
   devtools: { enabled: true },
   $production: {
     routeRules: {

@@ -3,13 +3,13 @@
     <div class="h-fit">
       <nav class="bg-gray-700 border-gray-200 dark:border-gray-900 inset-x-0 top-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a class="flex items-center space-x-3 rtl:space-x-reverse">
-            <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
-            <NuxtLink
-              to="/"
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Dunder Dev</NuxtLink>
-          </a>
+          <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
+          <NuxtLink
+            to="/"
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          >
+            Dunder Dev
+          </NuxtLink>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
