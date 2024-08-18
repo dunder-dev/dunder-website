@@ -95,12 +95,10 @@
 </template>
 
 <script setup>
-definePageMeta({
-	documentDriven: true
-})
+// definePageMeta({
+// 	documentDriven: true
+// })
 
 const { slug } = useRoute().params
-const { page, toc } = useContent()
-console.log("page", page, toc)
 </script>
 
