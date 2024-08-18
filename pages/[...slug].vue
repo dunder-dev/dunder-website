@@ -33,7 +33,7 @@
               <div class="flex-3 flex flex-col w-5/6">
                 <ContentRenderer :value="doc">
                   <h1 class="text-5xl mx-auto">
-                    {{ doc.title }}
+                    TITLE: {{ doc.title }}
                   </h1>
                   <div class="relative mt-2 mb-8 flex mx-auto items-center gap-x-4">
                     <img
