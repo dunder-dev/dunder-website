@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/ui",
     "@nuxtjs/mdc",
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
   ],
   devtools: { enabled: true },
   $production: {
