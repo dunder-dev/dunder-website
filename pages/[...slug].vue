@@ -31,32 +31,35 @@
             <div class="flex mt-12">
               <!-- Main Content Div taking up 75% of the space -->
               <div class="flex-3 flex flex-col w-5/6">
-                <h1 class="text-5xl mx-auto">
-                  {{ doc.title }}
-                </h1>
-                <div class="relative mt-2 mb-8 flex mx-auto items-center gap-x-4">
-                  <img
-                    :src="doc.avatar"
-                    alt=""
-                    class="h-10 w-10 rounded-full bg-gray-50"
-                  >
-                  <div class="text-sm leading-6">
-                    <p class="font-semibold text-white-900 text-xl">
-                      <a href="#">
-                        <span class="absolute inset-0" />
-                        {{ doc.author }}
-                      </a>
-                    </p>
-                    <p class="text-white-600">
-                      {{ doc.role }}
-                    </p>
+                <ContentRenderer :value="doc">
+                  <h1 class="text-5xl mx-auto">
+                    {{ doc.title }}
+                  </h1>
+                  <div class="relative mt-2 mb-8 flex mx-auto items-center gap-x-4">
+                    <img
+                      :src="doc.avatar"
+                      alt=""
+                      class="h-10 w-10 rounded-full bg-gray-50"
+                    >
+                    <div class="text-sm leading-6">
+                      <p class="font-semibold text-white-900 text-xl">
+                        <a href="#">
+                          <span class="absolute inset-0" />
+                          {{ doc.author }}
+                        </a>
+                      </p>
+                      <p class="text-white-600">
+                        {{ doc.role }}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <ContentRenderer
-                  class="max-w-4xl"
-                  :value="doc"
-                />
+                  <ContentRendererMarkdown :value="doc" />
+                </ContentRenderer>
               </div>
+              <!-- <ContentRenderer :value="doc">
+                <h1>{{ doc.title }}</h1>
+                <ContentRendererMarkdown :value="doc" />
+              </ContentRenderer> -->
 
               <!-- Table of Contents Div taking up 25% of the space -->
               <!-- <div class="flex-1 ml-4">
@@ -95,10 +98,6 @@
 </template>
 
 <script setup>
-// definePageMeta({
-// 	documentDriven: true
-// })
-
 const { slug } = useRoute().params
 </script>
 
