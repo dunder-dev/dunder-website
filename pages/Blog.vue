@@ -11,7 +11,7 @@
 
     <ContentList
       v-slot="{ list }"
-      path="/posts"
+      path="/blog"
       :query="{
         draft: false,
         sort: [
