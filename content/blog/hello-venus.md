@@ -5,6 +5,7 @@ role: "Man With Many Faces"
 avatar: "https://plus.unsplash.com/premium_vector-1718630786485-3f2a4245fe77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
 date: 2023-10-05
 draft: false
+navigation: true
 tags: ["talent", "grit"]
 thumbnail: "/img/hello-world.jpg"
 description: 'meta description of the page'
