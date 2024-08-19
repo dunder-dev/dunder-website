@@ -41,7 +41,7 @@
             <article>
               <h1>{{ doc.title }}</h1>
               <ContentRenderer
-                :value="doc"
+                :value="doc.body"
               />
             </article>
           </template>
