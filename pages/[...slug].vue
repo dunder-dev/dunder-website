@@ -31,6 +31,8 @@
           <ContentRendererMarkdown :value="article" />
         </ContentRenderer>
       </main> -->
+
+
       <main>
         <ContentDoc
           :path="slug ? `/blog/${slug[0]}` : '/blog'"
@@ -39,7 +41,6 @@
             <article>
               <h1>{{ doc.title }}</h1>
               <ContentRenderer
-                v-slot="{ doc }"
                 :value="doc"
               />
             </article>
@@ -124,8 +125,15 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from "vue"
 const { slug } = useRoute().params
-const { article } = await queryContent('blog').where({ slug: slug[0] }).findOne()
-console.log("article", article)
+const article = ref()
+
+// const { article } = await queryContent('blog').where({ slug: slug[0] }).findOne()
+
+onMounted(async() => {
+	article.value = await queryContent('blog').where({ slug: slug[0] }).findOne()
+	console.log("article", article.value)
+})
 </script>
 

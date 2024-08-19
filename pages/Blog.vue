@@ -8,7 +8,9 @@
         Read the musings from a team of developers who happen to be friends.
       </p>
     </div>
-    <AllPosts />
+    <client-only>
+      <AllPosts />
+    </client-only>
   </div>
 </template>
 
