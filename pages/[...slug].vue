@@ -25,13 +25,13 @@
         </div>
       </NuxtLink>
 
-      <main>
+      <!-- <main>
         <ContentRenderer :value="article">
           <h1>{{ article.title }}</h1>
           <ContentRendererMarkdown :value="article" />
         </ContentRenderer>
-      </main>
-      <!-- <main>
+      </main> -->
+      <main>
         <ContentDoc
           :path="slug ? `/blog/${slug[0]}` : '/blog'"
         >
@@ -51,7 +51,7 @@
             <h1>Document is empty</h1>
           </template>
         </ContentDoc>
-      </main> -->
+      </main>
 
 
 
@@ -126,5 +126,6 @@
 <script setup>
 const { slug } = useRoute().params
 const { article } = await queryContent('blog').where({ slug: slug[0] }).findOne()
+console.log("article", article)
 </script>
 
