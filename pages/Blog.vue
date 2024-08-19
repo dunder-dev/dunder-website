@@ -97,7 +97,7 @@ function paginate(list) {
 	return list.slice((page.value - 1) * pageCount, page.value * pageCount)
 }
 
-const posts = await queryContent('blog').find()
+// const posts = await queryContent('blog').find()
 
 </script>
 

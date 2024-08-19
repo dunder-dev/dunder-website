@@ -30,12 +30,40 @@
           v-slot="{ doc }"
           :path="slug ? `/blog/${slug[0]}` : '/blog'"
         >
-          <article>
-            <h1>{{ doc.title }}</h1>
-            <ContentRenderer :value="doc" />
-          </article>
+          <ContentRenderer :value="doc">
+            <template #default>
+              <h1>{{ doc.title }}</h1>
+              <div class="relative mt-2 mb-8 flex mx-auto items-center gap-x-4">
+                <img
+                  :src="doc.avatar"
+                  alt=""
+                  class="h-10 w-10 rounded-full bg-gray-50"
+                >
+                <div class="text-sm leading-6">
+                  <p class="font-semibold text-white-900 text-xl">
+                    <a href="#">
+                      <span class="absolute inset-0" />
+                      {{ doc.author }}
+                    </a>
+                  </p>
+                  <p class="text-white-600">
+                    {{ doc.role }}
+                  </p>
+                </div>
+              </div>
+            </template>
+            <template #empty>
+              <p>No content found.</p>
+            </template>
+            <template #not-found>
+              <h1>Document not found</h1>
+            </template>
+          </ContentRenderer>
+          <ContentRendererMarkdown :value="doc" />
         </ContentDoc>
       </main>
+
+      /
     </div>
   </div>
 </template>
