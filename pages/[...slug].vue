@@ -65,14 +65,20 @@
       </main> -->
 
       <div v-if="Array.isArray(post)">
-        {{ post[0].description }}
+        {{ post[0].title }}
+        <MDC
+          :value="post[0]"
+          tag="article"
+        />
       </div>
-      <h1>{{ post?.title }}</h1>
-      <MDC
-        :value="post"
-        tag="article"
-      />
 
+      <div v-else>
+        <h1>{{ post?.title }}</h1>
+        <MDC
+          :value="post"
+          tag="article"
+        />
+      </div>
 
       <!-- <div>
         <ContentDoc :path="slug ? `/blogPage/${slug[0]}` : '/blog'">
