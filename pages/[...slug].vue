@@ -64,10 +64,13 @@
         />
       </main> -->
 
+      <div v-if="Array.isArray(post)">
+        {{ post[0].description }}
+      </div>
       <h1>{{ post?.title }}</h1>
       <MDC
         :value="post"
-        tag="post"
+        tag="article"
       />
 
 
