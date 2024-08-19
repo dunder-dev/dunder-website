@@ -64,10 +64,10 @@
         />
       </main> -->
 
-      <h1>{{ article?.title }}</h1>
+      <h1>{{ post?.title }}</h1>
       <MDC
-        :value="article"
-        tag="article"
+        :value="post"
+        tag="post"
       />
 
 
@@ -141,17 +141,17 @@
 import { onMounted, ref } from "vue"
 const { path } = useRoute()
 const { slug } = useRoute().params
-const article = ref()
-
-// const { article } = await queryContent('blog').where({ slug: slug[0] }).findOne()
+const post = ref()
 
 onMounted(async() => {
-	article.value = await queryContent('blog').where({ slug: slug[0] }).findOne()
-	console.log("article", article.value)
+	const result = await queryContent('blog').where({ slug: slug[0] }).findOne()
+	post.value = result
+	console.log("result", result) // Logs the result immediately
+	console.log("post", post.value) // Logs post.value, which is now defined
 })
 
-const { data } = await useAsyncData(`content/blog/${path}`, () => {
-	return queryContent().where({ _path: path }).findOne()
-})
+// const { data } = await useAsyncData(`content/blog/${path}`, () => {
+// 	return queryContent().where({ _path: path }).findOne()
+// })
 </script>
 
