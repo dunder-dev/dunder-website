@@ -63,18 +63,10 @@
           :value="data"
         />
       </main> -->
-
-      <div v-if="Array.isArray(post)">
-        {{ post[0].title }}
+      <div>
+        <h1>Title: {{ post?.title }}</h1>
         <MDC
-          :value="post[0]"
-          tag="article"
-        />
-      </div>
-
-      <div v-else>
-        <h1>{{ post?.title }}</h1>
-        <MDC
+          v-if="post"
           :value="post"
           tag="article"
         />
@@ -155,8 +147,9 @@ const post = ref()
 onMounted(async() => {
 	const result = await queryContent('blog').where({ slug: slug[0] }).findOne()
 	post.value = result
-	console.log("result", result) // Logs the result immediately
-	console.log("post", post.value) // Logs post.value, which is now defined
+	if (Array.isArray(result)) {
+		post.value = result.find(e => e.slug === slug[0]) || null
+	}
 })
 
 // const { data } = await useAsyncData(`content/blog/${path}`, () => {
