@@ -43,8 +43,8 @@
                 :value="doc.body"
               >
                 <h1>{{ doc.title }}</h1>
+                <ContentRendererMarkdown :value="doc" />
               </ContentRenderer>
-              <ContentRendererMarkdown :value="doc" />
             </article>
           </template>
           <template #not-found>
