@@ -2,7 +2,7 @@
   <div class="bg-svg border border-gray-900 w-full mx-auto bg-gray-500 p-8 text-gray-900">
     <div class="w-4/5 mx-auto bg-gray-400 p-12">
       <NuxtLink
-        to="/blog"
+        to="/blogPage"
         class="flex mb-2 text-xl leading-8 text-gray-600 no-underline hover:underline"
       >
         <svg
@@ -34,15 +34,17 @@
 
 
       <main>
-        <LazyContentDoc
-          :path="slug ? `/blog/${slug[0]}` : '/blog'"
+        <ContentDoc
+          :path="slug ? `/blog/${slug[0]}` : '/blogPage'"
         >
           <template #default="{ doc }">
             <article>
-              <h1>{{ doc.title }}</h1>
               <ContentRenderer
                 :value="doc.body"
-              />
+              >
+                <h1>{{ doc.title }}</h1>
+              </ContentRenderer>
+              <ContentRendererMarkdown :value="doc" />
             </article>
           </template>
           <template #not-found>
@@ -51,7 +53,7 @@
           <template #empty>
             <h1>Document is empty</h1>
           </template>
-        </LazyContentDoc>
+        </ContentDoc>
       </main>
 
 
@@ -59,7 +61,7 @@
 
 
       <!-- <div>
-        <ContentDoc :path="slug ? `/blog/${slug[0]}` : '/blog'">
+        <ContentDoc :path="slug ? `/blogPage/${slug[0]}` : '/blog'">
           <template #default="{ doc }">
             <div class="flex mt-12">
               <div class="flex-3 flex flex-col w-4/6">
