@@ -34,7 +34,7 @@
 
 
       <main>
-        <ContentDoc
+        <LazyContentDoc
           :path="slug ? `/blog/${slug[0]}` : '/blog'"
         >
           <template #default="{ doc }">
@@ -51,7 +51,7 @@
           <template #empty>
             <h1>Document is empty</h1>
           </template>
-        </ContentDoc>
+        </LazyContentDoc>
       </main>
 
 
