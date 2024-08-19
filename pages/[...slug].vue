@@ -40,7 +40,7 @@
           <template #default="{ doc }">
             <article>
               <ContentRenderer
-                :value="doc.body"
+                :value="doc"
               >
                 <h1>{{ doc.title }}</h1>
                 <ContentRendererMarkdown :value="doc" />
