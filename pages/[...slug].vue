@@ -26,13 +26,22 @@
       </NuxtLink>
 
       <main>
+        <ContentRenderer :value="article">
+          <h1>{{ article.title }}</h1>
+          <ContentRendererMarkdown :value="article" />
+        </ContentRenderer>
+      </main>
+      <!-- <main>
         <ContentDoc
           :path="slug ? `/blog/${slug[0]}` : '/blog'"
         >
           <template #default="{ doc }">
             <article>
               <h1>{{ doc.title }}</h1>
-              <ContentRenderer :value="doc" />
+              <ContentRenderer
+                v-slot="{ doc }"
+                :value="doc"
+              />
             </article>
           </template>
           <template #not-found>
@@ -42,7 +51,7 @@
             <h1>Document is empty</h1>
           </template>
         </ContentDoc>
-      </main>
+      </main> -->
 
 
 
@@ -116,5 +125,6 @@
 
 <script setup>
 const { slug } = useRoute().params
+const article = await queryContent('blog').where({ slug: slug[0] }).findOne()
 </script>
 
