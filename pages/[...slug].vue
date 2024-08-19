@@ -35,24 +35,25 @@
 
       <main>
         <ContentDoc
+          v-slot="{doc}"
           :path="slug ? `/blog/${slug[0]}` : '/blogPage'"
         >
-          <template #default="{ doc }">
-            <article>
-              <ContentRenderer
-                :value="doc"
-              >
-                <h1>{{ doc.title }}</h1>
-                <ContentRendererMarkdown :value="doc" />
-              </ContentRenderer>
-            </article>
-          </template>
-          <template #not-found>
+          <!-- <template #default="{ doc }"> -->
+          <article>
+            <ContentRenderer
+              :value="doc"
+            >
+              <h1>{{ doc.title }}</h1>
+              <ContentRendererMarkdown :value="doc" />
+            </ContentRenderer>
+          </article>
+          <!-- </template> -->
+          <!-- <template #not-found>
             <h1>Document not found</h1>
           </template>
           <template #empty>
             <h1>Document is empty</h1>
-          </template>
+          </template> -->
         </ContentDoc>
       </main>
 
