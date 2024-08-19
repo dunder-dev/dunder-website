@@ -18,8 +18,8 @@ export default defineNuxtConfig({
     }
   },
   sourcemap: {
-    "server": true,
-    "client": true
+    server: true,
+    client: true
   },
   $development: {},
   css: ['~/assets/css/main.css'],

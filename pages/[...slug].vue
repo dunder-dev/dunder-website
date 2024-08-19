@@ -33,32 +33,42 @@
       </main> -->
 
 
-      <main>
+      <!-- <main>
         <ContentDoc
           v-slot="{doc}"
           :path="slug ? `/blog/${slug[0]}` : '/blogPage'"
         >
-          <!-- <template #default="{ doc }"> -->
-          <article>
-            <ContentRenderer
-              :value="doc"
-            >
-              <h1>{{ doc.title }}</h1>
-              <ContentRendererMarkdown :value="doc" />
-            </ContentRenderer>
-          </article>
-          <!-- </template> -->
-          <!-- <template #not-found>
+          <template #default="{ doc }">
+            <article>
+              <ContentRenderer
+                :value="doc"
+              >
+                <h1>{{ doc.title }}</h1>
+                <ContentRendererMarkdown :value="doc" />
+              </ContentRenderer>
+            </article>
+          </template>
+          <template #not-found>
             <h1>Document not found</h1>
           </template>
           <template #empty>
             <h1>Document is empty</h1>
-          </template> -->
+          </template>
         </ContentDoc>
-      </main>
+      </main> -->
 
+      <!-- <main class="prose text-left">
+        <ContentRenderer
+          v-if="data"
+          :value="data"
+        />
+      </main> -->
 
-
+      <h1>{{ article?.title }}</h1>
+      <MDC
+        :value="article"
+        tag="article"
+      />
 
 
       <!-- <div>
@@ -129,6 +139,7 @@
 
 <script setup>
 import { onMounted, ref } from "vue"
+const { path } = useRoute()
 const { slug } = useRoute().params
 const article = ref()
 
@@ -137,6 +148,10 @@ const article = ref()
 onMounted(async() => {
 	article.value = await queryContent('blog').where({ slug: slug[0] }).findOne()
 	console.log("article", article.value)
+})
+
+const { data } = await useAsyncData(`content/blog/${path}`, () => {
+	return queryContent().where({ _path: path }).findOne()
 })
 </script>
 
