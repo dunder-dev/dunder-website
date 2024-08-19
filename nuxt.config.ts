@@ -17,6 +17,10 @@ export default defineNuxtConfig({
       '/**': { isr: true },
     }
   },
+  sourcemap: {
+    "server": true,
+    "client": true
+  },
   $development: {},
   css: ['~/assets/css/main.css'],
   postcss: {
