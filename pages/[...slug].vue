@@ -25,15 +25,21 @@
         </div>
       </NuxtLink>
 
-      <!-- <main>
-        <ContentRenderer :value="article">
-          <h1>{{ article.title }}</h1>
-          <ContentRendererMarkdown :value="article" />
+      <div>
+        <ContentRenderer
+          v-if="post"
+          :value="post"
+        >
+          <h1>{{ post?.title }}</h1>
+          <ContentRendererMarkdown :value="post" />
+          <template #not-found>
+            <h1>Document not found</h1>
+          </template>
         </ContentRenderer>
-      </main> -->
+      </div>
 
 
-      <!-- <main>
+      <!-- <div>
         <ContentDoc
           v-slot="{doc}"
           :path="slug ? `/blog/${slug[0]}` : '/blogPage'"
@@ -62,15 +68,16 @@
           v-if="data"
           :value="data"
         />
-      </main> -->
-      <div>
+      </div> -->
+
+      <!-- <div>
         <h1>Title: {{ post?.title }}</h1>
         <MDC
           v-if="post"
           :value="post"
           tag="article"
         />
-      </div>
+      </div> -->
 
       <!-- <div>
         <ContentDoc :path="slug ? `/blogPage/${slug[0]}` : '/blog'">
