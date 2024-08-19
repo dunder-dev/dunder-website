@@ -125,6 +125,6 @@
 
 <script setup>
 const { slug } = useRoute().params
-const article = await queryContent('blog').where({ slug: slug[0] }).findOne()
+const { article } = await queryContent('blog').where({ slug: slug[0] }).findOne()
 </script>
 
