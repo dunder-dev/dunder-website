@@ -2,7 +2,7 @@
   <div class="bg-svg border border-gray-900 w-full mx-auto bg-gray-500 p-8 text-gray-900">
     <div class="w-4/5 mx-auto bg-gray-400 p-12">
       <NuxtLink
-        to="/blogPage"
+        to="/blog-page"
         class="flex mb-2 text-xl leading-8 text-gray-600 no-underline hover:underline"
       >
         <svg
@@ -61,117 +61,12 @@
           </div>
         </div>
       </div>
-
-
-    <!-- <div>
-        <ContentDoc
-          v-slot="{doc}"
-          :path="slug ? `/blog/${slug[0]}` : '/blogPage'"
-        >
-          <template #default="{ doc }">
-            <article>
-              <ContentRenderer
-                :value="doc"
-              >
-                <h1>{{ doc.title }}</h1>
-                <ContentRendererMarkdown :value="doc" />
-              </ContentRenderer>
-            </article>
-          </template>
-          <template #not-found>
-            <h1>Document not found</h1>
-          </template>
-          <template #empty>
-            <h1>Document is empty</h1>
-          </template>
-        </ContentDoc>
-      </main> -->
-
-    <!-- <main class="prose text-left">
-        <ContentRenderer
-          v-if="data"
-          :value="data"
-        />
-      </div> -->
-
-    <!-- <div>
-        <h1>Title: {{ post?.title }}</h1>
-        <MDC
-          v-if="post"
-          :value="post"
-          tag="article"
-        />
-      </div> -->
-
-    <!-- <div>
-        <ContentDoc :path="slug ? `/blogPage/${slug[0]}` : '/blog'">
-          <template #default="{ doc }">
-            <div class="flex mt-12">
-              <div class="flex-3 flex flex-col w-4/6">
-                <ContentRenderer :value="doc">
-                  <h1 class="text-5xl mx-auto">
-                    TITLE: {{ doc.title }}
-                  </h1>
-                  <div class="relative mt-2 mb-8 flex mx-auto items-center gap-x-4">
-                    <img
-                      :src="doc.avatar"
-                      alt=""
-                      class="h-10 w-10 rounded-full bg-gray-50"
-                    >
-                    <div class="text-sm leading-6">
-                      <p class="font-semibold text-white-900 text-xl">
-                        <a href="#">
-                          <span class="absolute inset-0" />
-                          {{ doc.author }}
-                        </a>
-                      </p>
-                      <p class="text-white-600">
-                        {{ doc.role }}
-                      </p>
-                    </div>
-                  </div>
-                  <ContentRendererMarkdown :value="doc" />
-                </ContentRenderer>
-              </div>
-
-              <div class="flex-1 ml-4">
-                <div class="sticky top-0 bg-gray-900 rounded-lg shadow-md p-2 flex flex-col items-center prose prose-a:text-pink-600 hover:prose-a:text-blue-500 z-10 w-80">
-                  <div class="text-xl font-semibold text-white my-4">
-                    TABLE OF CONTENTS
-                  </div>
-                  <ul class="list-disc pl-5 text-blue-800">
-                    <li
-                      v-for="link of doc.body.toc.links"
-                      :key="link.id"
-                      class="no-underline hover:underline"
-                    >
-                      <a
-                        :href="`#${link.id}`"
-                        class="text-blue-600 hover:text-blue-800 transition-colors duration-300"
-                      >
-                        {{ link.text }}
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </template>
-          <template #empty>
-            <p>No content found.</p>
-          </template>
-          <template #not-found>
-            <h1>Document not found</h1>
-          </template>
-        </ContentDoc>
-      </div> -->
     </div>
   </div>
 </template>
 
 <script setup>
 import { onMounted, ref } from "vue"
-const { path } = useRoute()
 const { slug } = useRoute().params
 const post = ref()
 
@@ -182,9 +77,5 @@ onMounted(async() => {
 		post.value = result.find(e => e.slug === slug[0]) || null
 	}
 })
-
-// const { data } = await useAsyncData(`content/blog/${path}`, () => {
-// 	return queryContent().where({ _path: path }).findOne()
-// })
 </script>
 

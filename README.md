@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# [Dunder Dev](dunder.dev) website and blog
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -72,4 +72,10 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.  
+
+## Run the app locally   
+
+```
+npm run dev -- -o
+```
