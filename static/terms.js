@@ -15,6 +15,13 @@ const terms = {
 			"textColor": "text-gray-100"
 		},
 		{
+			"front": "completion",
+			"back": "The text response provided by an LLM to the user's request",
+			"backgroundColor": "bg-yellow-300",
+			"borderColor": "border-yellow-300",
+			"textColor": "text-gray-800"
+	    },
+		{
 			"front": "zero-shot prompt",
 			"back": "prompt with no outcome examples",
 			"backgroundColor": "bg-blue-300",
@@ -43,8 +50,43 @@ const terms = {
 			"textColor": "text-gray-800"
 		},
 		{
-			"front": "completion",
-			"back": "The text response provided by an LLM to the user's request",
+			"front": "temperature",
+			"back": "A setting to control the diversity and randomness of the output",
+			"backgroundColor": "bg-yellow-300",
+			"borderColor": "border-yellow-300",
+			"textColor": "text-gray-800"
+	    },
+		{
+			"front": "Top P",
+			"back": "A setting to directly limit or expand the pool of available words",
+			"backgroundColor": "bg-yellow-300",
+			"borderColor": "border-yellow-300",
+			"textColor": "text-gray-800"
+	    },
+		{
+			"front": "Max Length",
+			"back": "Maximum number of tokens allowed to generate",
+			"backgroundColor": "bg-yellow-300",
+			"borderColor": "border-yellow-300",
+			"textColor": "text-gray-800"
+	    },
+		{
+			"front": "Stop Sequences",
+			"back": "A string that stops the model from generating more tokens",
+			"backgroundColor": "bg-yellow-300",
+			"borderColor": "border-yellow-300",
+			"textColor": "text-gray-800"
+	    },
+		{
+			"front": "Frequency Penalty",
+			"back": "A parameter that applies a penalty directly proportional to how many times the word has already appeared",
+			"backgroundColor": "bg-yellow-300",
+			"borderColor": "border-yellow-300",
+			"textColor": "text-gray-800"
+	    },
+		{
+			"front": "Presence Penalty",
+			"back": "A parameter that applies a penalty to a word despite its frequency, even if it occured once",
 			"backgroundColor": "bg-yellow-300",
 			"borderColor": "border-yellow-300",
 			"textColor": "text-gray-800"
