@@ -8,7 +8,7 @@
         v-for="(term, index) in terms.moduleOne"
         :key="term"
         :class="[
-          'rounded w-full h-64 flex flex-col justify-between border mb-6 py-5 px-4',
+          'rounded w-full h-64 flex flex-col justify-between border mb-6 py-5 px-4 cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-105',
           term.backgroundColor,
           term.borderColor,
           term.textColor
