@@ -1,24 +1,5 @@
 <template>
   <main>
-    <!-- <ContentList
-      v-slot="{ list }"
-      path="/blog"
-    >
-      <div
-        v-for="article in list"
-        :key="article._path"
-      >
-        <h2>{{ article.title }}</h2>
-        <p>{{ article.description }}</p>
-        <NuxtLink
-          :to="article.slug"
-          class="flex max-w-xl flex-col items-start justify-between"
-        >
-          {{ article.slug }}
-        </NuxtLink>
-      </div>
-    </ContentList>
-  </main> -->
     <ContentList
       v-slot="{ list }"
       path="/blog"
