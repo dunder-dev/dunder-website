@@ -44,7 +44,7 @@
             >
               <div
                 :class="[
-                  'w-fit rounded-lg border border-gray-900 py-1.5 px-3 font-sans text-xs font-bold uppercase opacity-100 cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-110',
+                  'w-fit rounded-lg border border-gray-900 py-1.5 px-3 font-sans text-xs font-bold uppercase opacity-100 cursor-pointer hover:shadow-lg',
                   currentSection === item.label ? 'bg-gray-900 text-white' : 'text-gray-800'
                 ]"
               >

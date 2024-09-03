@@ -26,7 +26,7 @@
               <time
                 :datetime="post.date"
                 class="text-gray-500 mb-2"
-              >{{ post.date }}</time>
+              >{{ getFormattedDate(post.date) }}</time>
             </div>
             <div class="group relative">
               <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
@@ -76,4 +76,16 @@ const page = ref(1)
 function paginate(list) {
 	return list.slice((page.value - 1) * pageCount, page.value * pageCount)
 }
+
+function getFormattedDate() {
+	const date = new Date()
+
+	const year = date.getFullYear()
+	const month = String(date.getMonth() + 1).padStart(2, '0') // Months are zero-based
+	const day = String(date.getDate()).padStart(2, '0')
+
+	return `${year}-${month}-${day}`
+}
+
+console.log(getFormattedDate())
 </script>
