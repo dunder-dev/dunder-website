@@ -24,29 +24,29 @@ const terms = {
 		{
 			"front": "zero-shot prompt",
 			"back": "prompt with no outcome examples",
-			"backgroundColor": "bg-blue-300",
-			"borderColor": "border-blue-300",
+			"backgroundColor": "bg-blue-400",
+			"borderColor": "border-blue-400",
 			"textColor": "text-gray-800"
 	    },
 		{
 			"front": "one-shot prompt",
 			"back": "prompt with one output example",
-			"backgroundColor": "bg-gray-800",
-			"borderColor": "border-gray-800",
-			"textColor": "text-gray-100"
+			"backgroundColor": "bg-gray-400",
+			"borderColor": "border-gray-400",
+			"textColor": "text-gray-800"
 		},
 		{
 			"front": "few-shot prompt",
 			"back": "prompt with several output examples",
-			"backgroundColor": "bg-gray-300",
-			"borderColor": "border-gray-300",
+			"backgroundColor": "bg-gray-400",
+			"borderColor": "border-gray-400",
 			"textColor": "text-gray-800"
 	    },
 		{
 			"front": "meta-prompting",
 			"back": "a technique approach to improve how prompts are formulated to achieve better outcomes",
-			"backgroundColor": "bg-pink-300",
-			"borderColor": "border-pink-300",
+			"backgroundColor": "bg-pink-400",
+			"borderColor": "border-pink-400",
 			"textColor": "text-gray-800"
 		},
 		{
@@ -66,8 +66,8 @@ const terms = {
 		{
 			"front": "Max Length",
 			"back": "Maximum number of tokens allowed to generate",
-			"backgroundColor": "bg-yellow-300",
-			"borderColor": "border-yellow-300",
+			"backgroundColor": "bg-pink-400",
+			"borderColor": "border-pink-400",
 			"textColor": "text-gray-800"
 	    },
 		{
@@ -87,8 +87,8 @@ const terms = {
 		{
 			"front": "Presence Penalty",
 			"back": "A parameter that applies a penalty to a word despite its frequency, even if it occured once",
-			"backgroundColor": "bg-yellow-300",
-			"borderColor": "border-yellow-300",
+			"backgroundColor": "bg-gray-400",
+			"borderColor": "border-gray-400",
 			"textColor": "text-gray-800"
 	    }
 	]
