@@ -55,6 +55,7 @@
         </div>
       </div>
       <UPagination
+        v-if="(list.length / pageCount) > 1"
         v-model="page"
         class="my-4"
         :ui="{ wrapper: 'justify-center'}"

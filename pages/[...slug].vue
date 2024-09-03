@@ -42,19 +42,19 @@
         </div>
 
         <div class="flex-1 ml-4">
-          <div class="sticky top-0 bg-gray-900 rounded-lg shadow-md p-2 flex flex-col items-center prose prose-a:text-pink-600 hover:prose-a:text-blue-500 z-10 w-80">
-            <div class="text-xl font-semibold text-white my-4">
+          <div class="sticky top-0 bg-gray-900 rounded-lg shadow-md p-6 flex flex-col items-center prose prose-a:text-gray-200 z-10 w-80">
+            <div class="text-xl font-semibold text-white">
               TABLE OF CONTENTS
             </div>
             <ul class="list-disc pl-5 text-blue-800">
               <li
                 v-for="link of post?.body?.toc?.links"
                 :key="link.id"
-                class="no-underline hover:underline"
+                class="no-underline"
               >
                 <a
                   :href="`#${link.id}`"
-                  class="text-blue-600 hover:text-blue-800 transition-colors duration-300"
+                  class="no-underline"
                 >
                   {{ link.text }}
                 </a>
