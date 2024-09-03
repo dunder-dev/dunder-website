@@ -120,7 +120,8 @@ const items = ref([
 			fixed: [],
 			added: [
 				"Added real life changelong data",
-				"The first blog post on gamification of learning"
+				"The first blog post on gamification of learning",
+				"Added 2 videos on data validation"
 			],
 			changed: [
 				"Removed dummy blog posts",
