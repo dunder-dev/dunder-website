@@ -115,42 +115,20 @@ import { ref } from "vue"
 
 const items = ref([
 	{
-		label: "2024-08-30",
+		label: "2024-09-03",
 		content: {
-			fixed: [
-				"Fixed an issue with user login",
-				"Corrected typos in documentation"
-			],
+			fixed: [],
 			added: [
-				"Added a new section on advanced Python",
-				"New exercises for JavaScript basics"
+				"Added real life changelong data",
+				"The first blog post on gamification of learning"
 			],
 			changed: [
-				"Updated the UI of the homepage",
-				"Modified the terms and conditions page"
+				"Removed dummy blog posts",
+				"Changed the background color for each post"
 			]
 		},
 		slot: "changelog",
 		description: "This changelog is for August 28"
-	},
-	{
-		label: "2024-08-31",
-		content: {
-			fixed: [
-				"Fixed a bug causing app crashes",
-				"Resolved CSS issues on mobile devices"
-			],
-			added: [
-				"Added a data validation",
-				"Added more examples to the documentation"
-			],
-			changed: [
-				"Changed the color scheme of the dashboard",
-				"Refactored backend API for better performance"
-			]
-		},
-		slot: "changelog",
-		description: "This changelog is for August 29"
 	},
   	{
 		label: "2024-08-23",
