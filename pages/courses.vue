@@ -119,12 +119,10 @@ const items = ref([
 		content: {
 			fixed: [],
 			added: [
-				"Added real life changelong data",
 				"The first blog post on gamification of learning",
-				"Added 2 videos on data validation"
+				"Two videos on data validation"
 			],
 			changed: [
-				"Removed dummy blog posts",
 				"Changed the background color for each post"
 			]
 		},
@@ -135,15 +133,15 @@ const items = ref([
 		label: "2024-08-23",
 		content: {
 			fixed: [
-				"Fixed several small feedback items that had to do with confusing text.",
-				"Fixed a few issues with notebooks dependencies for the workshops."
+				"Several small feedback items that had to do with confusing text",
+				"Resolved a few issues with notebook dependencies for the workshops"
 			],
 			added: [
 				"None",
 			],
 			changed: [
-				"Updated course direction for navigation to prevent confusion on where to find the trainings.",
-				"Updated some of the styles and theming in the course, like the video thumbnails."
+				"Updated course direction for navigation to prevent confusion on where to find the trainings",
+				"Updated some of the styles and theming in the course, like the video thumbnails"
 			]
 		},
 		slot: "changelog",
