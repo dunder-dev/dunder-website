@@ -6,7 +6,7 @@
           Learn by doing
         </h2>
         <p class="my-2 text-lg leading-8 text-gray-600">
-          Check out our in-depth courses about AI, Front End Development, etc!
+          Check out our in-depth courses about AI, Python, Front-end Development, etc!
         </p>
       </div>
 
@@ -134,14 +134,14 @@ const items = ref([
 		description: "This changelog is for August 28"
 	},
 	{
-		label: "2024-08-29",
+		label: "2024-08-31",
 		content: {
 			fixed: [
 				"Fixed a bug causing app crashes",
 				"Resolved CSS issues on mobile devices"
 			],
 			added: [
-				"Introduced a new dark mode feature",
+				"Added a data validation",
 				"Added more examples to the documentation"
 			],
 			changed: [
@@ -153,19 +153,18 @@ const items = ref([
 		description: "This changelog is for August 29"
 	},
   	{
-		label: "2024-08-28",
+		label: "2024-08-23",
 		content: {
 			fixed: [
-				"Resolved an error causing app crashes on startup",
-				"Fixed broken links in the user settings page"
+				"Fixed several small feedback items that had to do with confusing text.",
+				"Fixed a few issues with notebooks dependencies for the workshops."
 			],
 			added: [
-				"Introduced a new analytics dashboard",
-				"Added support for multiple languages"
+				"None",
 			],
 			changed: [
-				"Refined the password recovery flow for better usability",
-				"Updated the privacy policy to reflect new regulations"
+				"Updated course direction for navigation to prevent confusion on where to find the trainings.",
+				"Updated some of the styles and theming in the course, like the video thumbnails."
 			]
 		},
 		slot: "changelog",

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-svg border border-gray-900 w-full mx-auto bg-gray-500 p-8 text-gray-900">
-    <div class="w-4/5 mx-auto bg-gray-400 p-12">
+    <div class="w-4/5 mx-auto  p-12">
       <NuxtLink
         to="/blog-page"
         class="flex mb-2 text-xl leading-8 text-gray-600 no-underline hover:underline"
