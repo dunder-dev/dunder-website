@@ -31,16 +31,16 @@ const terms = {
 		{
 			"front": "one-shot prompt",
 			"back": "prompt with one output example",
-			"backgroundColor": "bg-gray-400",
-			"borderColor": "border-gray-400",
-			"textColor": "text-gray-800"
+			"backgroundColor": "bg-gray-500",
+			"borderColor": "border-gray-500",
+			"textColor": "text-gray-100"
 		},
 		{
 			"front": "few-shot prompt",
 			"back": "prompt with several output examples",
-			"backgroundColor": "bg-gray-400",
-			"borderColor": "border-gray-400",
-			"textColor": "text-gray-800"
+			"backgroundColor": "bg-gray-500",
+			"borderColor": "border-gray-500",
+			"textColor": "text-gray-100"
 	    },
 		{
 			"front": "meta-prompting",
@@ -87,9 +87,9 @@ const terms = {
 		{
 			"front": "Presence Penalty",
 			"back": "A parameter that applies a penalty to a word despite its frequency, even if it occured once",
-			"backgroundColor": "bg-gray-400",
-			"borderColor": "border-gray-400",
-			"textColor": "text-gray-800"
+			"backgroundColor": "bg-gray-500",
+			"borderColor": "border-gray-500",
+			"textColor": "text-gray-100"
 	    }
 	]
 }
