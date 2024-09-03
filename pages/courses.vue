@@ -10,7 +10,7 @@
         </p>
       </div>
 
-      <div class="group flex relative border border-gray-400 mb-4 rounded-lg shadow p-4 bg-yellow-300 bg-gradient-to-t from-transparent to-white opacity-100 cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-110">
+      <div class="group flex relative border border-gray-400 mb-4 rounded-lg shadow p-4 bg-yellow-300 bg-gradient-to-t from-transparent to-white opacity-100 cursor-pointer hover:shadow-lg">
         <div class="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
         <NuxtLink
           to="https://app.xperiencify.io/course/730141/"

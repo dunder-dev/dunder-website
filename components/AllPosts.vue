@@ -16,7 +16,7 @@
         <div
           v-for="post in paginate(list)"
           :key="post._path"
-          class="border border-gray-400 rounded-lg shadow p-4 bg-yellow-300 bg-gradient-to-t from-transparent to-white opacity-100 cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-110"
+          class="border border-gray-400 rounded-lg shadow p-4 bg-yellow-300 bg-gradient-to-t from-transparent to-white opacity-100 cursor-pointer hover:shadow-lg"
         >
           <NuxtLink
             :to="post.slug"
