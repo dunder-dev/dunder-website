@@ -6,7 +6,7 @@
         class="flex mb-2 text-xl leading-8 text-gray-600 no-underline hover:underline"
       >
         <svg
-          class="w-6 h-6 text-white dark:text-gray mr-2 mt-1"
+          class="w-6 h-6 text-gray dark:text-gray mr-2 mt-1"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -20,7 +20,7 @@
             d="M13 5H1m0 0 4 4M1 5l4-4"
           />
         </svg>
-        <div class="text-white">
+        <div class="text-gray">
           Back To Blog
         </div>
       </NuxtLink>
@@ -31,7 +31,9 @@
             v-if="post"
             :value="post"
           >
-            <h1>{{ post?.title }}</h1>
+            <h1 class="mx-auto">
+              {{ post?.title }}
+            </h1>
             <ContentRendererMarkdown :value="post" />
             <template #not-found>
               <h1>Document not found</h1>
