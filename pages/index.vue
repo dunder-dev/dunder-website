@@ -2,10 +2,10 @@
   <div>
     <div class="mt-12 flex flex-col">
       <h1 class="text-gray-800 mx-auto">
-        Meet the team
+        Meet the Team
       </h1>
       <div class="grid grid-cols-1 gap-y-8 pt-4 lg:mx-16 lg:max-w-none lg:grid-cols-2">
-        <div class="max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="w-full max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
             <div class="md:shrink-0">
               <img
@@ -22,14 +22,14 @@
                 href="#"
                 class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
               >I'm busy, leave a message</a>
-              <p class="mt-2 text-slate-500">
+              <!-- <p class="mt-2 text-slate-500">
                 Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
 
-        <div class="max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="w-full max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
             <div class="md:shrink-0">
               <img
@@ -45,15 +45,15 @@
                 href="#"
                 class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
               >Aaggghhh my life is a mess</a>
-              <p class="mt-2 text-slate-500">
+              <!-- <p class="mt-2 text-slate-500">
                 Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
 
 
-        <div class="max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="w-full max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
             <div class="md:shrink-0">
               <img
@@ -70,15 +70,15 @@
                 href="#"
                 class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
               >Get to work!</a>
-              <p class="mt-2 text-slate-500">
+              <!-- <p class="mt-2 text-slate-500">
                 Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
 
 
-        <div class="max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="w-full max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
             <div class="md:shrink-0">
               <img
@@ -95,15 +95,15 @@
                 href="#"
                 class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
               >I need to take a nap</a>
-              <p class="mt-2 text-slate-500">
+              <!-- <p class="mt-2 text-slate-500">
                 Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
 
 
-        <div class="max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="w-full max-w-md mx-auto mb-4 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
             <div class="md:shrink-0">
               <img
@@ -120,9 +120,9 @@
                 href="#"
                 class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
               >Can't wait for dinner</a>
-              <p class="mt-2 text-slate-500">
+              <!-- <p class="mt-2 text-slate-500">
                 Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
