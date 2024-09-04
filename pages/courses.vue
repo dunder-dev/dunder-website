@@ -117,7 +117,7 @@ const items = ref([
 	{
 		label: "2024-09-03",
 		content: {
-			fixed: [],
+			fixed: ["None"],
 			added: [
 				"Two videos on data validation"
 			],
