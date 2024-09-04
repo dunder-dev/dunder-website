@@ -119,7 +119,6 @@ const items = ref([
 		content: {
 			fixed: [],
 			added: [
-				"The first blog post on gamification of learning",
 				"Two videos on data validation"
 			],
 			changed: [
