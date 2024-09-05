@@ -12,31 +12,33 @@
         ],
       }"
     >
-      <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+      <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-y-4 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-1">
         <div
           v-for="post in paginate(list)"
           :key="post._path"
-          class="border border-gray-400 rounded-lg shadow p-4 bg-yellow-300 bg-gradient-to-t from-transparent to-white opacity-100 cursor-pointer hover:shadow-lg"
+          class="w-2/3 cursor-pointer"
         >
           <NuxtLink
             :to="post.slug"
-            class="flex max-w-xl flex-col items-start justify-between"
+            class="flex justify-between border-b border-gray-100 hover:border-gray-300"
           >
-            <div class="flex flex-col text-xs">
+            <div>
+              <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-400">
+                {{ post.title }}
+              </h3>
+              <!-- <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                {{ post.description }}
+              </p> -->
+            </div>
+            <div class="w-28 text-xs">
               <time
                 :datetime="post.date"
                 class="text-gray-500 mb-2"
-              >{{ getFormattedDate(post.date) }}</time>
+              >
+                {{ getFormattedDate(post.date) }}
+              </time>
             </div>
-            <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                {{ post.title }}
-              </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                {{ post.description }}
-              </p>
-            </div>
-            <div class="relative mt-8 flex items-center gap-x-4">
+            <!-- <div class="relative mt-8 flex items-center gap-x-4">
               <img
                 :src="post.avatar"
                 alt=""
@@ -50,7 +52,7 @@
                   {{ post.role }}
                 </p>
               </div>
-            </div>
+            </div> -->
           </NuxtLink>
         </div>
       </div>
@@ -70,22 +72,19 @@
 <script setup>
 import { ref } from "vue"
 
-const pageCount = 6
+const pageCount = 8
 const page = ref(1)
 
 function paginate(list) {
 	return list.slice((page.value - 1) * pageCount, page.value * pageCount)
 }
 
-function getFormattedDate() {
-	const date = new Date()
+function getFormattedDate(date) {
+	const newDate = new Date(date)
 
-	const year = date.getFullYear()
-	const month = String(date.getMonth() + 1).padStart(2, '0') // Months are zero-based
-	const day = String(date.getDate()).padStart(2, '0')
+	const options = { year: 'numeric', month: 'long', day: 'numeric' }
 
-	return `${year}-${month}-${day}`
+	return new Intl.DateTimeFormat('en-US', options).format(newDate)
 }
 
-console.log(getFormattedDate())
 </script>
