@@ -31,7 +31,7 @@ const cards = [
 </script>
 
 <template>
-  <div class="grid grid-cols-1 lg:flex flex-wrap gap-y-4 justify-around pt-4 lg:mx-16 lg:max-w-none lg:gap-x-8">
+  <div class="grid grid-cols-1 lg:flex flex-wrap gap-y-4 justify-around pt-4 px-6 lg:mx-16 lg:max-w-none lg:gap-x-8">
     <div
       v-for="card in cards"
       :key="card.name"
