@@ -1,7 +1,16 @@
+<script setup>
+import { useHead } from '@vueuse/head'
+
+// pages/my-cool-page.vue or app.vue
+useHead({
+	bodyAttrs: {
+		class: 'bg-gray-900'
+	}
+})
+</script>
+
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
