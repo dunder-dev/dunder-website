@@ -6,7 +6,7 @@
       <DesktopMenu />
     </nav>
 
-    <main class="mt-24 mb-12">
+    <main class="mt-20 mb-12">
       <NuxtPage />
     </main>
 
