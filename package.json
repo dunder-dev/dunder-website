@@ -15,12 +15,16 @@
     "@nuxt/ui": "^2.18.4",
     "@nuxtjs/mdc": "^0.8.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@vesp/nuxt-fontawesome": "^1.1.0",
     "nuxt": "^3.12.3",
     "rehype-figure": "^1.0.1",
     "remark-emoji": "^5.0.1",
     "vue": "latest"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@eslint/js": "^9.9.0",
     "@shikijs/markdown-it": "^1.12.0",
     "@tailwindcss/typography": "^0.5.13",
