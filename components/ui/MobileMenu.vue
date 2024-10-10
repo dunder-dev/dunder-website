@@ -5,7 +5,7 @@ const isOpen = ref(false)
 </script>
 
 <template>
-  <div class="md:hidden w-full flex flex-wrap items-center justify-between mx-auto py-4 px-8 text-white">
+  <div class="md:hidden w-full flex flex-wrap items-center justify-between mx-auto py-4 px-4 text-white">
     <NuxtLink
       to="/"
       class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
@@ -13,7 +13,7 @@ const isOpen = ref(false)
     >
       <NuxtImg
         src="/images/logo.png"
-        sizes="75px"
+        sizes="50px"
         alt="Dunder Dev Logo"
         class="relative z-50"
       />
