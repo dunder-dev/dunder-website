@@ -33,7 +33,7 @@
 </template>
 
 
-<script setup lang="ts">
+<script setup>
 defineProps({
 	code: {
 		type: String,
