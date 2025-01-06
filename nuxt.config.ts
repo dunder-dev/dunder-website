@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     '@vesp/nuxt-fontawesome'
   ],
+  ssr: false,
   devtools: { enabled: true },
   $production: {
     routeRules: {
@@ -73,5 +74,5 @@ export default defineNuxtConfig({
         sepia: 'monokai'
       }
     }
-  }
+  },
 })
