@@ -26,9 +26,6 @@
               <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-400">
                 {{ post.title }}
               </h3>
-              <!-- <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                {{ post.description }}
-              </p> -->
             </div>
             <div class="w-28 text-xs">
               <time
@@ -38,21 +35,6 @@
                 {{ getFormattedDate(post.date) }}
               </time>
             </div>
-            <!-- <div class="relative mt-8 flex items-center gap-x-4">
-              <img
-                :src="post.avatar"
-                alt=""
-                class="h-10 w-10 rounded-full bg-gray-50"
-              >
-              <div class="text-sm leading-6">
-                <p class="font-semibold text-gray-900">
-                  {{ post.author }}
-                </p>
-                <p class="text-gray-600">
-                  {{ post.role }}
-                </p>
-              </div>
-            </div> -->
           </NuxtLink>
         </div>
       </div>
