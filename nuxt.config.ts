@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxtjs/mdc",
     "@nuxtjs/tailwindcss",
+    '@vesp/nuxt-fontawesome'
   ],
   devtools: { enabled: true },
   $production: {
@@ -35,6 +36,11 @@ export default defineNuxtConfig({
         pathPrefix: false,    
       },
     ],
+  fontawesome: {
+    icons: {
+      solid: ['bars', 'xmark'],
+    },
+  },
   content: {
     documentDriven: true,
     markdown: {
