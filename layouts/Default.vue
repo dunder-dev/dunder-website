@@ -1,16 +1,16 @@
 <template>
-  <div class="min-h-screen bg-gray-900">
-    <nav class="bg-gray-900 inset-x-0 top-0 fixed w-full">
+  <div class="min-h-screen flex flex-col">
+    <nav class=" inset-x-0 top-0 w-full">
       <MobileMenu />
 
       <DesktopMenu />
     </nav>
 
-    <main class="mt-20 mb-12">
+    <main class="flex-grow">
       <NuxtPage />
     </main>
 
-    <footer class="bg-gray-900 shadow inset-x-0 bottom-0 h-16 text-gray-400">
+    <footer class="h-16">
       <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span class="text-sm sm:text-center dark:text-gray-400">2024 <a
           href=""

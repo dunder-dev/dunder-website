@@ -10,17 +10,16 @@
     >
       <NuxtImg
         src="/images/logo.png"
-        sizes="75px"
+        sizes="300px"
         alt="Dunder Dev Logo"
-        class="relative z-50"
       />
     </NuxtLink>
     <div class="font-medium flex flex-col gap-8 p-4 md:p-0 mt-4 md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 text-white">
       <NuxtLink
-        to="/ai"
+        to="/courses"
         class="block py-2 hover:pb-0 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-300 md:hover:text-white hover:border-b-2 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
       >
-        Learn AI
+        Courses
       </NuxtLink>
       <NuxtLink
         to="/blog-page"
@@ -28,18 +27,6 @@
       >
         Blog
       </NuxtLink>
-      <NuxtLink
-        to="/courses"
-        class="block py-2 hover:pb-0 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-300 md:hover:text-white hover:border-b-2 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-      >
-        Courses
-      </NuxtLink>
-      <!-- <NuxtLink
-                to="/guides"
-                class="block py-2 hover:pb-0 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-300 md:hover:text-white hover:border-b-2 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Free Guides
-              </NuxtLink> -->
       <NuxtLink
         to="https://courses.dunder.dev/login/"
         class="block py-2 hover:pb-0 hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-gray-300 md:hover:text-white hover:border-b-2 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
