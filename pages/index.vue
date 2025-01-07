@@ -1,10 +1,8 @@
 <template>
   <div>
-    <MainHero />
+    <!-- <CTASignup /> -->
 
-    <CTASignup />
-
-    <div class="mt-12 flex flex-col">
+    <div class="mt-6 flex flex-col">
       <h1 class="text-gray-200 mx-auto">
         Meet the Team
       </h1>
