@@ -16,6 +16,7 @@
     "@nuxtjs/mdc": "^0.8.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@vesp/nuxt-fontawesome": "^1.1.0",
+    "fortawesome": "^0.0.1-security",
     "nuxt": "^3.12.3",
     "rehype-figure": "^1.0.1",
     "remark-emoji": "^5.0.1",

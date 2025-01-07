@@ -9,7 +9,7 @@ watch(email, (newVal) => {
 </script>
 
 <template>
-  <div class="flex flex-col justify-center align-middle gap-y-4 uppercase py-8 bg-gradient-to-br from-orange-600 to-amber-400 md:flex-row md:max-h-32 md:gap-x-8 lg:gap-x-16">
+  <div class="flex flex-col justify-center align-middle uppercase py-2 bg-gradient-to-br from-orange-600 to-amber-400 md:flex-row md:max-h-32 md:gap-x-8 lg:gap-x-16">
     <div class="flex flex-col w-full justify-center align-middle text-center text-gray-100 text-2xl md:max-w-fit">
       Stay informed
     </div>
