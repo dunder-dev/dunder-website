@@ -43,22 +43,16 @@ const isOpen = ref(false)
         class="fixed inset-0 bg-gray-900 z-0"
       >
         <div class="mt-28 text-3xl text-center">
-          <NuxtLink
-            to="/ai"
-            class="block py-2 hover:pb-0 text-gray-300 hover:border-b-2"
-            @click="isOpen = false"
-          >
-            Learn AI
-          </NuxtLink>
-          <NuxtLink
+          <!-- <NuxtLink
             to="/blog-page"
             class="block py-2 hover:pb-0 text-gray-300 hover:border-b-2"
             @click="isOpen = false"
           >
             Blog
-          </NuxtLink>
+          </NuxtLink> -->
           <NuxtLink
-            to="/courses"
+            to="https://courses.dunder.dev"
+            target="_blank"
             class="block py-2 hover:pb-0 text-gray-300 hover:border-b-2"
             @click="isOpen = false"
           >
@@ -73,6 +67,7 @@ const isOpen = ref(false)
         </NuxtLink> -->
           <NuxtLink
             to="https://courses.dunder.dev/login/"
+            target="_blank"
             class="block py-2 hover:pb-0 text-gray-300 hover:border-b-2"
             @click="isOpen = false"
           >
