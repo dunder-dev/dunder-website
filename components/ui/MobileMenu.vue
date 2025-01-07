@@ -11,9 +11,9 @@ const isOpen = ref(false)
       class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
       @click="isOpen = false"
     >
-      <NuxtImg
+      <img
         src="/images/logo.png"
-        sizes="50px"
+        width="200"
         alt="Dunder Dev Logo"
         class="relative z-50"
       />

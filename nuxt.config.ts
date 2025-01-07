@@ -6,11 +6,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   modules: [
     '@nuxt/content',
-    "@nuxt/image",
     "@nuxt/ui",
     "@nuxtjs/mdc",
     "@nuxtjs/tailwindcss",
-    '@vesp/nuxt-fontawesome'
+    '@vesp/nuxt-fontawesome',
+    "@nuxt/image"
   ],
   ssr: false,
   devtools: { enabled: true },

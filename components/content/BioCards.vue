@@ -38,7 +38,7 @@ const cards = [
     >
       <div class="md:flex lg:flex-col xl:flex-row xl:h-full">
         <div class="md:shrink-0 lg:w-full xl:w-48">
-          <NuxtImg
+          <img
             class="h-96 w-full object-cover md:h-full md:w-48 lg:w-full"
             :src="card.image"
             :alt="card.name"
